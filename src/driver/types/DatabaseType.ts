@@ -3,6 +3,7 @@
  */
 export type DatabaseType =
     "mysql"|
+    "mysql-without-pool"|
     "postgres"|
     "cockroachdb"|
     "sap"|

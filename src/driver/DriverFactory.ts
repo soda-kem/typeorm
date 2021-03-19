@@ -9,6 +9,7 @@ import {ReactNativeDriver} from "./react-native/ReactNativeDriver";
 import {NativescriptDriver} from "./nativescript/NativescriptDriver";
 import {SqljsDriver} from "./sqljs/SqljsDriver";
 import {MysqlDriver} from "./mysql/MysqlDriver";
+import {MysqlDriver as MysqlWithoutPoolDriver} from "./mysql-without-pool/MysqlDriver";
 import {PostgresDriver} from "./postgres/PostgresDriver";
 import {ExpoDriver} from "./expo/ExpoDriver";
 import {AuroraDataApiDriver} from "./aurora-data-api/AuroraDataApiDriver";
@@ -31,6 +32,8 @@ export class DriverFactory {
         switch (type) {
             case "mysql":
                 return new MysqlDriver(connection);
+            case "mysql-without-pool":
+                return new MysqlWithoutPoolDriver(connection);
             case "postgres":
                 return new PostgresDriver(connection);
             case "cockroachdb":
