@@ -1,13 +1,13 @@
 {
   "name": "typeorm",
   "private": true,
-  "version": "0.2.31",
+  "version": "0.2.31-without-pool",
   "description": "Data-Mapper ORM for TypeScript, ES7, ES6, ES5. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, MongoDB databases.",
   "license": "MIT",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
+    "name": "Nguyễn Phi Hùng",
+    "email": "nguyenhungk57dhcn@gmail.com"
   },
   "main": "./index.js",
   "browser": {
@@ -34,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typeorm/typeorm.git"
+    "url": "https://github.com/soda-kem/typeorm.git"
   },
   "bugs": {
-    "url": "https://github.com/typeorm/typeorm/issues"
+    "url": "https://github.com/soda-kem/typeorm.git/issues"
   },
   "tags": [
     "orm",
