@@ -1,5 +1,6 @@
 import {CockroachConnectionOptions} from "../driver/cockroachdb/CockroachConnectionOptions";
 import {MysqlConnectionOptions} from "../driver/mysql/MysqlConnectionOptions";
+import {MysqlConnectionOptions as MysqlWithoutPoolConnectionOptions} from "../driver/mysql-without-pool/MysqlConnectionOptions";
 import {PostgresConnectionOptions} from "../driver/postgres/PostgresConnectionOptions";
 import {SqliteConnectionOptions} from "../driver/sqlite/SqliteConnectionOptions";
 import {SqlServerConnectionOptions} from "../driver/sqlserver/SqlServerConnectionOptions";
@@ -23,6 +24,7 @@ import {BetterSqlite3ConnectionOptions} from "../driver/better-sqlite3/BetterSql
  */
 export type ConnectionOptions =
     MysqlConnectionOptions|
+    MysqlWithoutPoolConnectionOptions|
     PostgresConnectionOptions|
     CockroachConnectionOptions|
     SqliteConnectionOptions|
